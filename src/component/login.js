@@ -49,7 +49,7 @@ class Login extends Component {
         fetch(url, options)
             .then((response) => response.json())
             .then(result => {
-                if (result.response !== undefined) {
+                if (result.access_token !== null) {
                     console.log("Invalid Username or Password")
                     this.setState({ passwordError: false })
                     this.setState({ usernameError: false })
