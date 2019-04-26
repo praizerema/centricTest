@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4fd
+}
+
+.wrap {
+
+    width: 70%;
+    margin: auto;
+    margin-top: 5vh;
+    text-align: left; 
+
+}
+
+.center {
+    display: block;
+    width: 50%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.wallet {
+    height: 60px;
+        width: 96%;
+        font-size: 14px;
+    margin: 20px 5px;
+    border-radius: 5px;
+    color: #fbcf20 ;
+    font-weight: lighter;
+    text-decoration: none;
+    background-color: #8f0566;
+    border: 1px thin #8f0566;
+
+}
+
+.existing {
+    height: 60px;
+    width: 96%;
+    font-size: 14px;
+    margin: 20px 5px;
+    background-color: #0c0c0c;
+    border: 1px thin #8f0566;
+    border-radius: 5px;
+    color: #fbcf20 ;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+button, .container a  {
+    width: 96%;
+    display: inline-block;  
+}
+button:hover
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+    display: inline;
+    flex-direction: row;
+}
+.pgh{
+    color: #88a2af;
+     font-size: 1em; 
+     text-align: center;
+}
+.pgh2{
+    color:#420335; 
+    font-size: 1.2em;
+     text-align: center; 
+      font-weight: bold;
+}
