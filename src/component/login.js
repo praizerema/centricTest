@@ -49,7 +49,8 @@ class Login extends Component {
         fetch(url, options)
             .then((response) => response.json())
             .then(result => {
-                if (result.access_token !== null) {
+                console.log(result.access_token)
+                if (result.access_token === undefined) {
                     console.log("Invalid Username or Password")
                     this.setState({ passwordError: false })
                     this.setState({ usernameError: false })
@@ -76,7 +77,7 @@ render() {
             this.setState({ usernameError: false })
             this.setState({ Error: false })
         }}>
-            <img src={logo} className="center" />
+            <img src={logo} className="logo" />
             <form action="" method="POST" className='text-center' onSubmit={(e) => { this.login(e, this.state.username, this.state.password) }}>
                 {/* <label for='phoneNumber'></label> --> */}
                 <input name='phoneNumber' id="phoneNumber" type="tel" placeholder="Phone Number"

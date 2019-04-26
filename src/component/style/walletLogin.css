@@ -11,10 +11,9 @@ body {
 
 }
 
-.center {
+.logo {
     display: block;
-    width: 50%;
-    height: 200px;
+    width: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;

@@ -7,12 +7,12 @@ import AuthService from './authService'
 class Home extends Component {
     render() {
         return ( 
-            <div style={{width:'80%',margin:'1%',textAlign:'center'}} onMouseMove={(e) => {
+            <div style={{margin:'1%',textAlign:'center'}} className='container' onMouseMove={(e) => {
                 this.setState({ passwordError: false })
                 this.setState({ usernameError: false })
                 this.setState({ Error: false })
             }}>
-                <img src={logo} className="center" />
+                <img src={logo} className="logo" />
                 
                 <img src={loggedIn}/>
               <div><Link to='/' onClick={(e) => AuthService.logout()}>Signout</Link> </div>  
