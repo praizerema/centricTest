@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import './style/CreateNewWallet.css'
 import logo from './image/logo.png'
 import { Link } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
 class CreateNewWallet extends Component {
+    TEST_SITE_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
+    onChangeCapcha = value=> {
+        console.log("Captcha value:", value);
+      }
     render() {
         return (
 
@@ -25,7 +30,10 @@ class CreateNewWallet extends Component {
                     <label for='password2'> Choose a Password Again</label>
                     <input name='password2' id='password2' type="password" placeholder="Confirm password" />
                     <div className="robot">
-                        <span>I am not a robot </span>
+                        <ReCAPTCHA
+                            sitekey={this.TEST_SITE_KEY}
+                            onChange={this.onChangeCapcha}
+                        />
                     </div>
                     <button type="button" className="continue">Continue</button>
 

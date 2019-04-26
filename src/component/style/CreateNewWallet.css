@@ -67,13 +67,19 @@ button:hover
 
 
  .robot{
-     background-color: #fff;
-     height: 60px;
-     width: 300px;
+     background-color:transparent;
+     padding: 9px 4%;
+     width: 92%;
+     text-align: center;
      display: block;
      margin-right: auto;
      margin-left: auto;
  }
+ .robot div{
+    background-color:transparent;
+    width: 100% !important;
+    text-align: center;
+}
  span{
      text-align: center
  }
